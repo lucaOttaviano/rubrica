@@ -12,7 +12,8 @@ import { InputComponent } from './input/input.component';
     AppComponent,
     NavbarComponent,
     ContactsListComponent,
-    InputComponent
+    InputComponent,
+
   ],
   imports: [
     BrowserModule,

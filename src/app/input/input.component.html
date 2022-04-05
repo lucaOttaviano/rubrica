@@ -1,7 +1,15 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-    Modal
-  </button>
+<div id="imgHomePresentation" class="container-fluid bg-primary" style="height: 35em">
+    <div class="container-fluid " style="height: 50%">
+        <h1 class="text-light d-flex justify-content-center align-items-end" style="text-align: center; height: 100%;">Address Book</h1>
+    </div>
+    <div class="container d-flex justify-content-center" style="margin-top: 6em">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#myModal">Start</button>
+    </div>
+</div>
+
+
+
 
 <!-- Modal -->
 <div class="modal bg-dark fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -20,7 +28,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" (click)="insert()">Save changes</button>
+                <button type="button" class="btn btn-primary" routerLink="/contacts" (click)="insert()">Save changes</button>
             </div>
         </div>
     </div>
