@@ -11,7 +11,7 @@ h6 {
 }
 
 #paramContainer {
-    height: 20em;
+    height: 25em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -24,4 +24,29 @@ h6 {
     background: url(../imgs/icn.jpg);
     background-size: cover;
     background-position: center center;
+}
+
+label {
+    color: white;
+}
+
+.modal-content {
+    background-color: #2a2927;
+}
+
+.modal-body {
+    flex-direction: column;
+    padding: 3em 1em;
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5em;
+    }
+    input {
+        background: transparent;
+        border: none;
+        border-bottom: solid 1px white;
+        color: white;
+    }
 }

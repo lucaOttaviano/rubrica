@@ -6,11 +6,11 @@ import { Contact } from '../interfaces/contact';
 export class ServiceService {
   array: Contact[]= [
     {
-      firstname: "test",
-      lastname: "test", 
-      number: 308490283,
-    }
-  ]; // inizializzo l'array vuoto da riempire
+       firstname: "test",
+       lastname: "test", 
+       number: 308490283,
+     }
+  ];  
   constructor() { }
   // aggiunge l'input dell'input.component all'array
   addContact(inputFirst: string, inputLast: string, inputNum: number){

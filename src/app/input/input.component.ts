@@ -13,12 +13,17 @@ export class InputComponent implements OnInit {
     lastname: "",
     number: 0,
   }
+
   constructor(private serviceService: ServiceService) { } // iniezione del servizio
   ngOnInit(): void {
   }
   // richiama la funzione addContact del service
   insert(){
     this.serviceService.addContact(this.input.firstname, this.input.lastname, this.input.number);
+    this.input.firstname = "";
+    this.input.lastname = "";
+    this.input.number = 0;
   }
+  
 }
 

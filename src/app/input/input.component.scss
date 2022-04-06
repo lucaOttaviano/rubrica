@@ -7,8 +7,13 @@ input::-webkit-inner-spin-button {
 
 #imgHomePresentation {
     background: url(../imgs/homePresentation.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    &:hover {
+        background-size: 110%;
+    }
 }
 
 input {

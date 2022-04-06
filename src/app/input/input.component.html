@@ -4,13 +4,9 @@
     </div>
     <div class="container d-flex justify-content-center" style="margin-top: 6em">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#myModal">Start</button>
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#myModal">Add</button>
     </div>
 </div>
-
-
-
-
 <!-- Modal -->
 <div class="modal bg-dark fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -20,22 +16,19 @@
                 <h5 class="modal-title col-4 offset-2" style="text-align: center" id="myModalLabel"> New contact</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <div class="container d-flex flex-wrap" style="display: flex; gap: 1em; margin-top: 2em; justify-content: center;">
-                    <div class="container-fluid d-flex align-items-center" style="gap: 2em; flex-direction: column">
+            <div class="modal-body" style="padding: 4em 0">
+                <div class="container d-flex flex-wrap" style="display: flex; gap: 1em; justify-content: center;">
+                    <div class="container-fluid d-flex align-items-center" style="gap: 1em; flex-direction: column">
                         <label class="text-black">Insert contact name </label>
                         <input type="text" [(ngModel)]="input.firstname">
                     </div>
-                    <div class="container-fluid d-flex align-items-center" style="gap: 2em; flex-direction: column">
+                    <div class="container-fluid d-flex align-items-center" style="gap: 1em; flex-direction: column">
                         <label class="text-black">Insert contact last name </label>
                         <input type="text" [(ngModel)]="input.lastname">
                     </div>
-                    <div class="container-fluid d-flex align-items-center" style="gap: 2em; flex-direction: column">
+                    <div class="container-fluid d-flex align-items-center" style="gap: 1em; flex-direction: column">
                         <label class="text-black">Insert contact number </label>
                         <input type="number" [(ngModel)]="input.number">
-                    </div>
-                    <div class="container-fluid d-flex align-items-center" style="gap: 2em; flex-direction: column">
-                        <button class="btn btn-primary" (click)="insert()">Insert</button>
                     </div>
                 </div>
             </div>
