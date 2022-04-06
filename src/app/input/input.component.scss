@@ -1,12 +1,18 @@
+// eliminazione freccie da input number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 #imgHomePresentation {
     background: url(../imgs/homePresentation.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-// eliminazione freccie da input number
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 0.5em
 }
