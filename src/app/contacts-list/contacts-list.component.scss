@@ -1,0 +1,21 @@
+#card {
+    margin: 0.5em 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+h6 {
+    color: #252525;
+    margin: 0;
+}
+
+#paramContainer {
+    height: 10em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}

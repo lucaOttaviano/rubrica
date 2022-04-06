@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contact } from '../interfaces/contact';
 import { ServiceService } from '../services/service.service'; // import del servizio
 @Component({
   selector: 'app-contacts-list',
@@ -7,7 +8,7 @@ import { ServiceService } from '../services/service.service'; // import del serv
 })
 
 export class ContactsListComponent implements OnInit {
-  array: string[] = this.serviceService.array; // inizializza l'array uguale a quello del servizio 
+  array: Contact[] = this.serviceService.array; // inizializza l'array uguale a quello del servizio 
   constructor(private serviceService: ServiceService) { } // injection del servizio
 
   ngOnInit(): void {
