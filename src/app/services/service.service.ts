@@ -10,7 +10,16 @@ export class ServiceService {
        lastname: "test", 
        number: 308490283,
      }
-  ];  
+  ];
+
+  search(firstname: string) {
+    if (firstname) {
+      return this.array.filter(x => x.firstname === firstname);
+    } else {
+      return this.array;
+    }
+  }
+
   constructor() { }
   // aggiunge l'input dell'input.component all'array
   addContact(inputFirst: string, inputLast: string, inputNum: number){

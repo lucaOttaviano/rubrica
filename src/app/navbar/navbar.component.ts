@@ -16,6 +16,10 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchFunc(searchFirstname: string) {
+    
+  }
+
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // ----------------------- FUNZIONE PER BARRA DI RICERCA ----------------------
@@ -35,13 +39,13 @@ export class NavbarComponent implements OnInit {
   //   } 
   //   console.log(this.serviceService.array);
   // }
-  // ------------------------ SEZIONE DI ARRAY PER RICERCA -------------------------
+  // // ------------------------ SEZIONE DI ARRAY PER RICERCA -------------------------
   // emptyArr1: Contact[]= this.serviceService.array; // l'array iniziale viene copiato 
-  // // [{
-  // //   firstname: "",
-  // //   lastname: "",
-  // //   number: 0,
-  // // }]
+  // [{
+  //   firstname: "",
+  //   lastname: "",
+  //   number: 0,
+  // }]
   // emptyArr2: Contact[]= [{ // array vuoto
   //   firstname: "",
   //   lastname: "",
